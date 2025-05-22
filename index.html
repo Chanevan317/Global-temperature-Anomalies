@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Story: The Warming Earth</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Global Temperature Anomalies</h1>
+    <p>Annual trends and monthly breakdown (1880-2016)</p>
+
+    <div class="chart-container">
+        <h3>Annual Temperature Variations from 1880 to 2016</h3>
+        <canvas id="annualChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h3>Monthly Temperature Variations in <span id="selectedYear"></span></h3>
+        <canvas id="monthlyChart"></canvas>
+    </div>
+
+    <div id="slider-container">
+        <div id="currentYear">Selected Year: 1880</div>
+        <input type="range" id="yearSlider" min="1880" max="2016" value="1880">
+    </div>
+
+    <script src="chart.js"></script>
+</body>
+</html>
